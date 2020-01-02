@@ -1,0 +1,2872 @@
+dd if=/dev/zero of=xv6.img count=10000 status=none
+dd if=bootblock of=xv6.img conv=notrunc status=none
+dd if=kernel of=xv6.img seek=1 conv=notrunc status=none
+qemu-system-i386 -nographic -drive file=fs.img,index=1,media=disk,format=raw -drive file=xv6.img,index=0,media=disk,format=raw -smp 1 -m 512 
+NO process : 1
+estNO process : 1
+NO process : 1
+NO process : 2
+nice : 0, cnt: 1
+name : initcode pid 1, nice 0, state 3 tick 0 exist
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 0
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<initcode>
+
+NO process : 2
+nice : 0, cnt: 1
+name : initcode pid 1, nice 0, state 3 tick 0 exist
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 0
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<initcode>
+
+{id 1  nice 0 tick1 allticks 3 (1)
+nice : 0, cnt: 0
+nice : 1, cnt: 1
+name : initcode pid 1, nice 1, state 3 tick 0 exist
+nice : 2, cnt: 0
+nice : 3, cnt: 0
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<initcode>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 1
+name : initcode pid 1, nice 1, state 2 tick 1 exist
+nice : 2, cnt: 0
+nice : 3, cnt: 0
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<initcode>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 1
+name : initcode pid 1, nice 1, state 2 tick 1 exist
+nice : 2, cnt: 0
+nice : 3, cnt: 0
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<initcode>
+
+{id 1  nice 1 tick2 allticks 5 (2)
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 1
+name : initcode pid 1, nice 2, state 3 tick 0 exist
+nice : 3, cnt: 0
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<initcode>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 1
+name : initcode pid 1, nice 2, state 2 tick 1 exist
+nice : 3, cnt: 0
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<initcode>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 1
+name : initcode pid 1, nice 2, state 2 tick 2 exist
+nice : 3, cnt: 0
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<initcode>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 1
+name : initcode pid 1, nice 2, state 2 tick 3 exist
+nice : 3, cnt: 0
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<initcode>
+
+{id 1  nice 2 tick4 allticks 9 (4)
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : initcode pid 1, nice 3, state 3 tick 0 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<initcode>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : initcode pid 1, nice 3, state 2 tick 1 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<initcode>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : initcode pid 1, nice 3, state 2 tick 2 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<initcode>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : initcode pid 1, nice 3, state 2 tick 3 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<initcode>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : initcode pid 1, nice 3, state 2 tick 3 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<initcode>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : initcode pid 1, nice 3, state 2 tick 4 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<initcode>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 5 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 1
+name : init pid 2, nice 0, state 3 tick 0 exist
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+{id 2  nice 0 tick1 allticks 16 (1)
+nice : 0, cnt: 0
+nice : 1, cnt: 1
+name : init pid 2, nice 1, state 3 tick 0 exist
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 1
+name : init pid 2, nice 1, state 2 tick 1 exist
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+{id 2  nice 1 tick2 allticks 18 (2)
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 1
+name : init pid 2, nice 2, state 3 tick 0 exist
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 1
+name : init pid 2, nice 2, state 2 tick 1 exist
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 1
+name : init pid 2, nice 2, state 2 tick 2 exist
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 1
+name : init pid 2, nice 2, state 2 tick 3 exist
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+{id 2  nice 2 tick4 allticks 22 (4)
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 2
+name : init pid 1, nice 3, state 2 tick 6 exist
+name : init pid 2, nice 3, state 3 tick 0 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 2
+name : init pid 1, nice 3, state 2 tick 6 exist
+name : init pid 2, nice 3, state 2 tick 1 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 2
+name : init pid 1, nice 3, state 2 tick 6 exist
+name : init pid 2, nice 3, state 2 tick 2 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 2
+name : init pid 1, nice 3, state 2 tick 6 exist
+name : init pid 2, nice 3, state 2 tick 3 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 2
+name : init pid 1, nice 3, state 2 tick 6 exist
+name : init pid 2, nice 3, state 2 tick 4 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 2
+name : init pid 1, nice 3, state 2 tick 6 exist
+name : init pid 2, nice 3, state 2 tick 4 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 2
+name : init pid 1, nice 3, state 2 tick 6 exist
+name : init pid 2, nice 3, state 2 tick 5 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 2
+name : init pid 1, nice 3, state 2 tick 6 exist
+name : init pid 2, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 2
+name : init pid 1, nice 3, state 2 tick 6 exist
+name : init pid 2, nice 3, state 2 tick 7 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 2
+name : init pid 1, nice 3, state 2 tick 6 exist
+name : init pid 2, nice 3, state 2 tick 7 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+{id 2  nice 3 tick8 allticks 30 (8)
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 1
+name : init pid 2, nice 4, state 3 tick 0 exist
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 1
+name : init pid 2, nice 4, state 2 tick 0 exist
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 1
+name : init pid 2, nice 4, state 2 tick 1 exist
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+$ nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 1
+name : sh pid 2, nice 4, state 2 tick 2 exist
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 1
+name : sh pid 2, nice 4, state 2 tick 2 exist
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 1
+name : sh pid 2, nice 4, state 2 tick 3 exist
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 1
+name : sh pid 2, nice 4, state 2 tick 4 exist
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 1
+name : sh pid 2, nice 4, state 2 tick 4 exist
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+2nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 1
+name : sh pid 2, nice 4, state 2 tick 5 exist
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 1
+name : sh pid 2, nice 4, state 2 tick 5 exist
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 1
+name : sh pid 2, nice 4, state 2 tick 6 exist
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 1
+name : sh pid 2, nice 4, state 2 tick 7 exist
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 1
+name : sh pid 2, nice 4, state 2 tick 7 exist
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 1
+name : sh pid 2, nice 4, state 2 tick 8 exist
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 1
+name : sh pid 2, nice 4, state 2 tick 8 exist
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 1
+name : sh pid 2, nice 4, state 2 tick 9 exist
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 1
+name : sh pid 2, nice 4, state 2 tick 10 exist
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 1
+name : sh pid 2, nice 4, state 2 tick 10 exist
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 1
+name : sh pid 2, nice 4, state 2 tick 11 exist
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 1
+name : sh pid 2, nice 4, state 2 tick 12 exist
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 1
+name : sh pid 2, nice 4, state 2 tick 12 exist
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 1
+name : sh pid 2, nice 4, state 2 tick 13 exist
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 1
+name : sh pid 2, nice 4, state 2 tick 13 exist
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 1
+name : sh pid 2, nice 4, state 2 tick 14 exist
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 1
+name : sh pid 2, nice 4, state 2 tick 15 exist
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 1
+name : sh pid 2, nice 4, state 2 tick 15 exist
+nice : 5, cnt: 0
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+{id 2  nice 4 tick16 allticks 46 (16)
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 3 tick 0 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 0 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 1 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 2 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 2 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 3 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 3 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 4 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+
+nice : 0, cnt: 1
+name : sh pid 3, nice 0, state 3 tick 0 exist
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 5 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+{id 3  nice 0 tick1 allticks 52 (1)
+nice : 0, cnt: 0
+nice : 1, cnt: 1
+name : sh pid 3, nice 1, state 3 tick 0 exist
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 5 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+exec est2 failed
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 3 tick 5 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+$ nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 5 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 6 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 7 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 7 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 8 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 8 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 9 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 10 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 10 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 11 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 11 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 12 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 13 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 13 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 14 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 14 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 15 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 16 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 16 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 17 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 17 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 18 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 19 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 19 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 20 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 20 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 21 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 22 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 22 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 23 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 23 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 24 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 25 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 25 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 26 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 26 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 27 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 28 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 28 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 29 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 29 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 30 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 31 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 1
+name : sh pid 2, nice 5, state 2 tick 31 exist
+nice : 6, cnt: 0
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+{id 2  nice 5 tick32 allticks 80 (32)
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 3 tick 0 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 1 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 1 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 2 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 2 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 3 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 4 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 4 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 5 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+hnice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 5 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 6 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 7 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 7 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 8 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+NO process : 89
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 8 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 8 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 9 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 9 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 10 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 11 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 11 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 12 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 12 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 13 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 14 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 14 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 15 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+anice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 15 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 16 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 17 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 17 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 18 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 18 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 19 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 20 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 20 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 21 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 21 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 22 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+lnice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 23 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 23 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 24 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 25 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 25 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 26 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 26 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 27 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 28 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 28 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 29 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 29 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 30 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+tnice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 31 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 31 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 32 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 32 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 33 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 34 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 34 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 35 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 35 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 36 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 37 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 37 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 38 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 38 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+
+nice : 0, cnt: 1
+name : sh pid 4, nice 0, state 3 tick 0 exist
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 39 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+{id 4  nice 0 tick1 allticks 121 (1)
+nice : 0, cnt: 0
+nice : 1, cnt: 1
+name : sh pid 4, nice 1, state 3 tick 0 exist
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 39 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 1
+name : sh pid 4, nice 1, state 2 tick 1 exist
+nice : 2, cnt: 0
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 39 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+{id 4  nice 1 tick2 allticks 123 (2)
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 1
+name : sh pid 4, nice 2, state 3 tick 0 exist
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 39 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 1
+name : sh pid 4, nice 2, state 2 tick 0 exist
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 39 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 1
+name : sh pid 4, nice 2, state 2 tick 1 exist
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 39 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 1
+name : sh pid 4, nice 2, state 2 tick 2 exist
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 39 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 1
+name : sh pid 4, nice 2, state 2 tick 2 exist
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 39 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 1
+name : sh pid 4, nice 2, state 2 tick 3 exist
+nice : 3, cnt: 1
+name : init pid 1, nice 3, state 2 tick 6 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 39 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
+{id 4  nice 2 tick4 allticks 127 (4)
+nice : 0, cnt: 0
+nice : 1, cnt: 0
+nice : 2, cnt: 0
+nice : 3, cnt: 2
+name : init pid 1, nice 3, state 2 tick 6 exist
+name : sh pid 4, nice 3, state 3 tick 0 exist
+nice : 4, cnt: 0
+nice : 5, cnt: 0
+nice : 6, cnt: 1
+name : sh pid 2, nice 6, state 2 tick 39 exist
+nice : 7, cnt: 0
+nice : 8, cnt: 0
+nice : 9, cnt: 0
+nice : 10, cnt: 0
+<init>
+
